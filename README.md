@@ -124,3 +124,23 @@ AI_Assistant/
 - API keys stored in `.env` (not committed to git)
 - `.gitignore` configured for sensitive files
 - CORS enabled for frontend-backend communication
+
+## ⚠️ Known Limitations
+
+### Database Seeding
+The database seeding functionality (`npm run seed`) requires access to newer Gemini API models that may not be available in the free tier. If you encounter model version errors:
+
+**Workaround:**
+- The chat system is fully functional without seeded data
+- The AI will respond to queries but won't return furniture items
+- For full functionality, consider:
+  - Using a paid Gemini API tier
+  - Manually adding furniture items to MongoDB
+  - Adjusting the model version in `seed-database.ts` to match your API access level
+
+**Error Example:**
+```
+models/gemini-1.5-flash is not found for API version v1beta
+```
+
+This is a known limitation of the Gemini API free tier and doesn't affect the core chat functionality.
