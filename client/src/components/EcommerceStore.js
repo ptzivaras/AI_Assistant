@@ -14,9 +14,9 @@ const EcommerceStore = () => {
       <header className="header">
         <div className="container">
           <div className="top-bar">
-            <div className="logo">ShopSmart</div>
+            <div className="logo">FurniStyle</div>
             <div className="search-bar">
-              <input type="text" placeholder="Search for products..." />
+              <input type="text" placeholder="Find your perfect furniture..." />
               <button>
                 <FaSearch />
               </button>
@@ -45,12 +45,12 @@ const EcommerceStore = () => {
             {/* Unordered list for navigation items */}
             <ul>
               <li><a href="#" className="active">Home</a></li>
-              <li><a href="#">Electronics</a></li>
-              <li><a href="#">SportsClothing</a></li>
-              <li><a href="#">Nets</a></li>
-              <li><a href="#">Balls</a></li>
-              <li><a href="#">SportKits</a></li>
-              <li><a href="#">Deals</a></li>
+              <li><a href="#">Living Room</a></li>
+              <li><a href="#">Bedroom</a></li>
+              <li><a href="#">Dining</a></li>
+              <li><a href="#">Office</a></li>
+              <li><a href="#">Outdoor</a></li>
+              <li><a href="#">Sale</a></li>
             </ul>
           </nav>
         </div>
